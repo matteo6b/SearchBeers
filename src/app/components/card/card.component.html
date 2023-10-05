@@ -1,0 +1,16 @@
+<mat-card class="content">
+  <mat-card-header>
+    <mat-card-title>{{ beer.name }} </mat-card-title>
+  </mat-card-header>
+  <br />
+  <img mat-card-image [src]="beer.image_url" />
+  <mat-card-content>
+    <br />
+    <p>
+      {{ beer.ingredients.yeast }}
+    </p>
+
+    <p>HOOPS</p>
+    <span *ngFor="let hops of beer.ingredients.hops">{{ hops.name }} </span>
+  </mat-card-content>
+</mat-card>

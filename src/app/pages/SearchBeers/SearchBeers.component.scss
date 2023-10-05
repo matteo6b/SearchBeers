@@ -1,0 +1,17 @@
+.container {
+  padding: 24px;
+
+  .responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+  }
+  .mat-h1 {
+    text-align: center;
+    color: yellowgreen;
+    text-shadow: 2px 2px 2px black;
+  }
+  .loading {
+    text-align: center;
+  }
+}

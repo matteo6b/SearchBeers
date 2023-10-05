@@ -1,0 +1,9 @@
+<div class="container">
+  <h1 class="mat-h1">SearchBeers</h1>
+  <app-search   (textChange)="onTextChange($event)"  >    </app-search>
+ 
+  <div   class="responsive-grid">
+    <app-card *ngFor="let beer of beers" [beer]="beer"></app-card>
+  </div>
+   <div *ngIf="loading" ><mat-spinner></mat-spinner>.</div>
+</div>
